@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guess the Number</title>
-<link rel="icon" type="img2.png" href="img2.png" />
+<link rel="icon" type="image/png" href="img2.png" />
 <style>
 body {
     font-family: Arial, sans-serif;
@@ -16,11 +16,22 @@ body {
 
 h1 {
     text-align: center;
-    color: black;
+    color: white;
 }
 
 p {
-    color: black;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
 input {
@@ -60,12 +71,6 @@ button:hover {
     margin-top: 20px;
 }
 
-.message {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
 #history, #timer {
     margin-top: 10px;
     font-size: 16px;
@@ -85,6 +90,7 @@ button:hover {
     padding: 12px 15px;
     text-align: center;
     border: 1px solid #fffefe;
+    color: black;
 }
 
 .leaderboard-table th {
@@ -136,7 +142,7 @@ button:hover {
             <th>Name</th>
             <th>Guesses</th>
             <th>Time(s)</th>
-            <th>Game Mode</th> <!-- Added Game Mode column -->
+            <th>Game Mode</th>
         </tr>
     </thead>
     <tbody id="leaderboard-body">
